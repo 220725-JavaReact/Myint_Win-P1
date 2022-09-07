@@ -4,6 +4,7 @@ I use servlets and create a REST API of store app.
 
 ## List of REST API and sample CURL
 * /FashionStore/registerCustomer
+```
 curl --location --request POST 'http://localhost:8080/FashionStore/registerCustomer' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -11,17 +12,29 @@ curl --location --request POST 'http://localhost:8080/FashionStore/registerCusto
     "email":"thurein@mail.com",
     "address":"Bentonville, AR"
 }'
+```
 * /FashionStore/searchCustomer
+```
 curl --location --request GET 'http://localhost:8080/FashionStore/searchCustomer?email=win@mail.com'
+```
 * /FashionStore/allCustomer
+```
 curl --location --request GET 'http://localhost:8080/FashionStore/allCustomer'
+```
 * /FashionStore/getAllStore
+```
 curl --location --request GET 'http://localhost:8080/FashionStore/getAllStore'
+```
 * /FashionStore/getStoreByName
+```
 curl --location --request GET 'http://localhost:8080/FashionStore/getStoreByName?name=XYZ Fifth Avenue Store'
+```
 * /FashionStore/getStoreByAddress
+```
 curl --location --request GET 'http://localhost:8080/FashionStore/getStoreByAddress?address=Bronx'
+```
 * /FashionStore/replenishStoreInventory
+```
 curl --location --request POST 'http://localhost:8080/FashionStore/replenishStoreInventory' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -41,7 +54,9 @@ curl --location --request POST 'http://localhost:8080/FashionStore/replenishStor
         }
     ]
 }'
+```
 * /FashionStore/order
+```
 curl --location --request POST 'http://localhost:8080/FashionStore/order' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -50,7 +65,7 @@ curl --location --request POST 'http://localhost:8080/FashionStore/order' \
                 "storeName": "XYZ Fifth Avenue Store",
                 "quantity": 1
 }'
-
+```
 ## Project requirement
 
 ### Functionalities:
