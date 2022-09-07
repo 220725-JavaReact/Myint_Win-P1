@@ -1,0 +1,42 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>CustomerController</servlet-name>
+    <servlet-class>com.revature.controllers.CustomerController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CustomerController</servlet-name>
+    <url-pattern>/registerCustomer</url-pattern>
+    <url-pattern>/searchCustomer</url-pattern>
+    <url-pattern>/allCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StoreController</servlet-name>
+    <servlet-class>com.revature.controllers.StoreController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>StoreController</servlet-name>
+    <url-pattern>/getAllStore</url-pattern>
+    <url-pattern>/getStoreByName</url-pattern>
+    <url-pattern>/getStoreByAddress</url-pattern>
+    <url-pattern>/replenishStoreInventory</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>OrderController</servlet-name>
+    <servlet-class>com.revature.controllers.OrderController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>OrderController</servlet-name>
+    <url-pattern>/order</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
